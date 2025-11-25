@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_beryllium.mk
+    $(LOCAL_DIR)/clover_beryllium.mk

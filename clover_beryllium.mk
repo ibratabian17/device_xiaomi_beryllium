@@ -6,17 +6,17 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Halcyon stuff.
-$(call inherit-product, vendor/halcyon/config/common.mk)
+# Inherit some common clover stuff.
+$(call inherit-product, vendor/clover/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
-HALCYON_BUILD_TYPE := Beta
-WITH_GMS := true
+USE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := halcyon_beryllium
+PRODUCT_NAME := clover_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
